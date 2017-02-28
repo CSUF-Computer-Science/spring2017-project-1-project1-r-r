@@ -102,6 +102,7 @@ public:
 				babyName++;
 			current = current->next;
 		}
+		cout  << "working ... " << endl;
 		return babyName; // Babies with given name
 	}
 
