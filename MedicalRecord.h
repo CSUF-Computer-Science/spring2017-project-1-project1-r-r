@@ -101,10 +101,9 @@ public:
 			if(current->baby.getName().compare(s) == 0)
 				babyName++;
 			current = current->next;
+			cout  << "working ... " << endl;
 		}
 		return babyName; // Babies with given name
-		cout  << "working ... " << endl;
-
 	}
 
 private:
