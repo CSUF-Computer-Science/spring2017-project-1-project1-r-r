@@ -9,8 +9,8 @@ using namespace std;
 
 // A structure for implementing linked list
 struct Node {
-	Baby baby;																// Variable to store baby information
-	Node * next;															// A next pointer for linked list
+	Baby baby;						// Variable to store baby information
+	Node * next;						// A next pointer for linked list
 };
 
 class MedicalRecord {
@@ -58,11 +58,11 @@ public:
 		int popularCount = 0;						// Storing count of most popular name
 		while(current)
 		{
-			string tempName = current->baby.getName();				// Temporary stored name
-			int tempCount = 0;						// Temporary storing count for comparison
+			string tempName = current->baby.getName();		// Temporary stored name
+			int tempCount = 0;					// Temporary storing count for comparison
 			// Checking all names in list
 			if(popularCount == 0 || tempName.compare(popularName) != 0) {
-				tempCount = numberOfBabiesWithName(tempName);		// Calling function to get no. of babies with name
+				tempCount = numberOfBabiesWithName(tempName);	// Calling function to get no. of babies with name
 				// Updating popular Name and Count if new popular is found
 				if(tempCount > popularCount) {
 					popularCount = tempCount;
@@ -101,8 +101,9 @@ public:
 			if(current->baby.getName().compare(s) == 0)
 				babyName++;
 			current = current->next;
+			cout << " " << endl;
 		}
-		return babyName; // Babies with given name
+		return babyName;     				// Babies with given name
 	}
 
 private:
